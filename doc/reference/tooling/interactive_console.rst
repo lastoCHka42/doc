@@ -20,7 +20,7 @@ It includes:
 
 .. code-block:: none
 
-    -- Interactive console example with Lua input and YAML output
+    -- Interactive console example with Lua input and YAML output --
     tarantool> box.info().replication
     ---
     - 1:
@@ -37,9 +37,9 @@ Interactive console input and output
 The **input language** can be either Lua (default) or SQL. To change the input
 language, run ``\set language <language>``, for example:
 
-..  code-block:: tarantoolsession
+.. code-block:: tarantoolsession
 
-    -- Set input language to SQL
+    -- Set input language to SQL --
     tarantool> \set language sql
 
 The **delimiter** can be changed to any character with ``\set delimiter <character>``.
@@ -47,17 +47,17 @@ By default, the delimiter is empty, which means the input does not need to end
 with a delimiter.
 For example, a common recommendation for SQL input is to use the semicolon delimiter:
 
-..  code-block:: tarantoolsession
+.. code-block:: tarantoolsession
 
-    -- Set ';' delimiter
+    -- Set ';' delimiter --
     tarantool> \set delimiter ;
 
 The **output format** can be either `YAML <http://yaml.org/spec>`_ (default) or Lua.
 To change the output format, run ``\set output <format>``, for example:
 
-..  code-block:: tarantoolsession
+.. code-block:: tarantoolsession
 
-    -- Set output format Lua
+    -- Set output format Lua --
     tarantool> \set output lua
 
 The default YAML output format is the following:
@@ -82,16 +82,16 @@ symbol is empty. You can change it to any character or character sequence.
 To set an end of statement symbol for the current session, run `\`set output lua,local_eos=<symbol>``,
 for example:
 
-..  code-block:: tarantoolsession
+.. code-block:: tarantoolsession
 
-    -- Set output format Lua and '#' end of statement symbol
+    -- Set output format Lua and '#' end of statement symbol --
     tarantool> \set output lua,local_eos=#
 
 To switch back to the empty end of statement symbol:
 
-..  code-block:: tarantoolsession
+.. code-block:: tarantoolsession
 
-    -- Set output format Lua and empty end of statement symbol
+    -- Set output format Lua and empty end of statement symbol --
     tarantool> \set output lua,local_eos=``.
 
 
