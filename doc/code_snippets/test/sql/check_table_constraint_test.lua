@@ -42,6 +42,6 @@ g.test_space_is_updated = function(cg)
         ]])
 
         -- Tests
-        t.assert_equals(insert_author_err:unpack().message, "Check constraint 'CHECK_NAME_LENGTH' failed for tuple")
+        t.assert_equals(insert_author_err:unpack().message, "Check constraint 'CHECK_NAME_LENGTH' failed for a tuple")
     end)
 end
